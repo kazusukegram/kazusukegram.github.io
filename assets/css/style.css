@@ -1,0 +1,305 @@
+@charset "UTF-8";
+
+body{
+    font-family: 'Noto Sans JP', "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #333;
+}
+label, input, textarea, select, button{
+    cursor: pointer;
+}
+
+button{
+    border: 0;
+}
+
+.profile li{
+    list-style: none;
+}
+
+
+/* 
+section 
+*/
+.section{
+    padding:30px 15px;
+
+}
+
+.section-secoundary{
+background-color: white;
+
+}
+
+.section-headline{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0 0 40px;
+    position: relative;
+	padding-bottom: 10px;
+}
+
+.section-headline::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 8px;
+	background-image: repeating-linear-gradient(45deg, #b4a983 0px, #b4a983 1px, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 50%);
+	background-size: 8px 8px;
+}
+
+.section-button{
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* 
+about 
+*/
+.about{
+    margin: 0;
+    display: flex;
+}
+
+.about-image2{
+    width: 400px;
+}
+
+.about-image{
+    position: relative;
+}
+
+.about-image::before,
+.about-image::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    z-index: 1;
+}
+  
+.about-image::before {
+    top: -10px;
+    right: -10px;
+    border-top: 30px solid #053e62;
+    border-right: 30px solid #053e62;
+    border-bottom: 30px solid rgba(0, 0, 0, 0) 0;
+    border-left: 30px solid rgba(0, 0, 0, 0) 0;
+}
+  
+.about-image::after {
+    bottom: -10px;
+    left: -10px;
+    border-top: 30px solid rgba(0, 0, 0, 0) 0;
+    border-right: 30px solid rgba(0, 0, 0, 0) 0;
+    border-bottom: 30px solid #053e62;
+    border-left: 30px solid #053e62;
+}
+
+.about-caption{
+    padding-left: 15px;
+    
+}
+
+.about-headline{
+    margin: 0 0 20ppx;
+    font-size: 30px;
+}
+
+.about-description{
+    display: flex;
+    font-size: 5px;
+}
+
+
+/* 
+grid
+*/
+
+.grid{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-item{
+    list-style: none;
+}
+
+.grid-col-2 > .grid-item{
+    width: 50%;
+}
+
+.grid-col-3 > .grid-item{
+    width: 33.3%;
+}
+
+.grid-col-4 > .grid-item{
+    width: 25%;
+}
+
+/* 
+feature
+*/
+.feature{
+    text-align: center;
+    padding:0 15px;
+}
+
+.feature-headline{
+    font-weight: bold;
+    margin: 0 0 20px;
+}
+
+.feature-img{
+    margin: 0 0 20px;
+}
+
+.feature-discription{
+    margin: 0;
+    text-align: left;
+}
+/*
+card 
+*/
+.card{
+    padding:0 10px;
+}
+.card-link{
+    display: block;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    transition: background-color .25s;
+}
+
+.card-link:hover{
+    background-color: dimgray;
+}
+
+.card-label{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: darkgray;
+    color: aliceblue;
+    display: block;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.card-image{
+    width:  100%;
+    height: auto;
+}
+
+.card-info{
+    padding: 5px 10px;
+}
+/* .card-time{} */
+.card-headline{
+    margin: 0;
+}
+.card-description{
+    margin: 0;
+} 
+/* 
+avater 
+*/
+.avater{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: start;
+    padding: 10px;
+}
+.avater-name{
+    font-weight: bold;
+    padding-left: 15px;
+}
+
+.avater-image{
+    margin: 0;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+/* 
+button
+*/
+.button {
+    display: inline-block;
+    color: #fff;
+    font-weight: bold;
+    background-color: #333;
+    text-align: center;
+    padding: 15px 60px;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 0 #bbb;
+    transition: box-shadow .25s;
+}
+.button:hover {
+    box-shadow: 0 0 0 #bbb;
+}
+
+/* 
+.select,.input,.radio,.textarea
+*/
+
+.select{
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    min-width: 500px;
+}
+
+.input{
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    min-width: 500px;
+}
+
+.radio{
+    margin: 0 10px;
+}
+.textarea{
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    min-width: 500px;
+    min-height: 100px;
+}
+
+/* 
+form
+ */
+
+/* .form{} */
+
+.form-table{
+    margin: 0 auto;
+}
+
+/* .form-table tr{} */
+
+.form-table th{
+    padding: 10px;
+    text-align: left;
+}
+
+.form-table td{
+    padding: 10px;
+}
+
+.form-button{
+    margin-top: 20px;
+    text-align: center;
+}
